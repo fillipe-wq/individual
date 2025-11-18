@@ -1,0 +1,212 @@
+/* Importação de fonte básica */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Cinza claro de fundo */
+    color: #333;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: #0077b6; /* Azul Geográfico Escuro */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #00b4d8; /* Azul Claro para Destaque */
+}
+
+/* --- MAIN CONTENT --- */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section HERO (Apenas na Index) */
+.hero {
+    background-color: #ade8f4;
+    color: #03045e;
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#saibaMaisBtn {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#saibaMaisBtn:hover {
+    background-color: #00b4d8;
+    transform: translateY(-2px);
+}
+
+/* Section Destaques/Cards/Geral */
+.destaques h2, .conteudo-principal h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #03045e;
+}
+.conteudo-principal p {
+    margin-bottom: 15px;
+}
+
+.card-container, .projecoes-grid, .conceitos-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+/* Estilos de Tabela (Usado em continentes.html) */
+.tabela-continentes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.tabela-continentes th, .tabela-continentes td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+.tabela-continentes th {
+    background-color: #0077b6;
+    color: white;
+}
+.tabela-continentes tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos de Lista (Usado em clima.html e mapas.html) */
+.lista-fatores {
+    list-style: none;
+    padding-left: 0;
+}
+.lista-fatores li {
+    background: #e9f5f9; /* Fundo mais suave */
+    margin: 10px 0;
+    padding: 12px;
+    border-left: 5px solid #00b4d8;
+    border-radius: 4px;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.social-links a {
+    color: #00b4d8;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* --- RESPONSIVIDADE (Ajustes para telas menores) --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+        margin: 5px;
+        font-size: 0.9em;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .card-container, .projecoes-grid, .conceitos-grid {
+        flex-direction: column;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+}
