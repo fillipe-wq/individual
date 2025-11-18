@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo-Mundo - Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Exemplo de estilo para lista de fatores */
+        .lista-fatores {
+            list-style: none;
+            padding-left: 0;
+        }
+        .lista-fatores li {
+            background: #ade8f4;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #0077b6;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Geo-Mundo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="continentes.html">Continentes</a></li>
+                <li><a href="clima.html" class="active">Clima</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+                <li><a href="populacao.html">População</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo-principal">
+            <h1>Climatologia: Fatores e Tipos Climáticos</h1>
+            <p>O **clima** é o comportamento médio da atmosfera de uma região ao longo de um período. Não deve ser confundido com o **tempo**, que é a condição momentânea da atmosfera.</p>
+            
+            <h2>Principais Fatores Climáticos</h2>
+            <ul class="lista-fatores">
+                <li>**Latitude:** Afeta a intensidade da radiação solar (zonas térmicas).</li>
+                <li>**Altitude:** Quanto maior, menor a temperatura (queda de $\sim 6,5^\circ C$ a cada $1.000\text{m}$).</li>
+                <li>**Correntes Marítimas:** Massas de água que podem aquecer ou resfriar as regiões costeiras.</li>
+                <li>**Continentalidade e Maritimidade:** Distância de grandes corpos d'água, afetando a amplitude térmica.</li>
+                <li>**Relevo:** Barreiras naturais que influenciam a circulação de massas de ar e chuvas (chuvas orográficas).</li>
+            </ul>
+            
+            <h2>Classificação Climática de Köppen (Exemplos)</h2>
+            <div class="card-container" style="gap: 15px;">
+                <div class="card">
+                    <h3>Tropical (A)</h3>
+                    <p>Altas temperaturas e chuvas abundantes, geralmente em baixas latitudes.</p>
+                </div>
+                <div class="card">
+                    <h3>Árido/Semiárido (B)</h3>
+                    <p>Baixa precipitação anual, com grande variação diária de temperatura.</p>
+                </div>
+                <div class="card">
+                    <h3>Temperado (C)</h3>
+                    <p>Quatro estações bem definidas, comum em médias latitudes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Geo-Mundo. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
