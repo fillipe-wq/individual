@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo-Mundo - População</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos para cards de conceitos */
+        .conceitos-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .conceitos-grid .card {
+            flex: 1;
+            min-width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Geo-Mundo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="continentes.html">Continentes</a></li>
+                <li><a href="clima.html">Clima</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+                <li><a href="populacao.html" class="active">População</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo-principal">
+            <h1>Geografia da População</h1>
+            <p>A Geografia da População estuda a distribuição, composição e as mudanças demográficas das populações humanas no espaço geográfico.</p>
+            
+            <h2>Conceitos Chave em Demografia</h2>
+            <div class="conceitos-grid">
+                <div class="card">
+                    <h3>População Absoluta</h3>
+                    <p>O número total de habitantes de um lugar. Países com alta população absoluta são considerados **populosos**.</p>
+                </div>
+                <div class="card">
+                    <h3>Densidade Demográfica</h3>
+                    <p>População relativa. Calcula-se dividindo a População Absoluta pela Área ($\text{hab/km}^2$). Regiões com alta densidade são **povoadas**.</p>
+                </div>
+                <div class="card">
+                    <h3>Crescimento Natural</h3>
+                    <p>Diferença entre a taxa de natalidade e a taxa de mortalidade em um determinado período (Ex: $20$ nascimentos e $5$ mortes por mil, o crescimento é $15/1000$).</p>
+                </div>
+            </div>
+
+            <h2>Transição Demográfica</h2>
+            <p style="margin-top: 20px;">É o processo de mudança no perfil demográfico de uma sociedade, passando de taxas de natalidade e mortalidade altas (fase pré-transição) para taxas baixas (fase pós-transição). Isso leva ao envelhecimento populacional.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Geo-Mundo. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
