@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo-Mundo - Continentes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo específico para a tabela (adicione em style.css se preferir) */
+        .tabela-continentes {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .tabela-continentes th, .tabela-continentes td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+        .tabela-continentes th {
+            background-color: #0077b6;
+            color: white;
+        }
+        .tabela-continentes tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Geo-Mundo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="continentes.html" class="active">Continentes</a></li>
+                <li><a href="clima.html">Clima</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+                <li><a href="populacao.html">População</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo-principal">
+            <h1>Os Seis Continentes</h1>
+            <p>Os continentes são grandes massas de terra que constituem a superfície terrestre. Eles variam drasticamente em tamanho, população e características culturais e físicas.</p>
+            
+            <table class="tabela-continentes">
+                <thead>
+                    <tr>
+                        <th>Continente</th>
+                        <th>Área (km²)</th>
+                        <th>População (Aprox.)</th>
+                        <th>Densidade (hab./km²)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ásia</td>
+                        <td>44.614.000</td>
+                        <td>4.721.000.000</td>
+                        <td>106</td>
+                    </tr>
+                    <tr>
+                        <td>América</td>
+                        <td>42.549.000</td>
+                        <td>1.043.000.000</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>África</td>
+                        <td>30.365.000</td>
+                        <td>1.400.000.000</td>
+                        <td>46</td>
+                    </tr>
+                    <tr>
+                        <td>Europa</td>
+                        <td>10.180.000</td>
+                        <td>746.000.000</td>
+                        <td>73</td>
+                    </tr>
+                    <tr>
+                        <td>Oceania</td>
+                        <td>8.526.000</td>
+                        <td>43.000.000</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Antártida</td>
+                        <td>14.000.000</td>
+                        <td>~5.000 (Sazonal)</td>
+                        <td>0.0003</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 20px;">*Dados aproximados, podem variar conforme a fonte e a metodologia de contagem.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Geo-Mundo. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
